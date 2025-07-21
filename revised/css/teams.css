@@ -1,0 +1,94 @@
+.page-section{
+    font-family: 'Poppings', sans-serif;
+}
+
+
+.max-width{
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.page-section .teamtitle::after{
+    content: " ";
+    text-align: center;
+}
+
+.carousel .teamcard{
+    display:inline-flex;
+    align-items: center;
+}
+
+
+.page-section .carousel .teamcard{
+    display:inline-flex;
+    width: 300px;
+    height: 400px;  
+    background: #035c57;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+#container{
+    align-items:center;
+}
+
+
+.page-section .carousel .teamcard:hover{
+    background: crimson;
+}
+
+.page-section .carousel .teamcard .teambox{
+    display: inline-flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+
+.page-section .carousel .teamcard:hover .teambox{
+    transform: scale(1.05);
+}
+.page-section .carousel .teamcard .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.page-section .carousel .teamcard{
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+ 
+.page-section .carousel .teamcard:hover{
+    border-color: #fff;    
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl-dot{
+    height: 23px;
+    width: 23px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 15px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+background: crimson;
+}
+

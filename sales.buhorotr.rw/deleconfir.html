@@ -1,0 +1,98 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="message_style.css">
+<script type="text/javascript" src="jquery.js">
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("#test_delete").click(function(){
+    message();
+  });
+  $("#cancel").click(function(){
+    hide();
+  });
+});
+	
+function message()
+{
+  $("#delete_message").slideDown();
+}
+
+function hide()
+{
+  $("#delete_message").slideUp();
+}
+</script>
+
+<style>
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#E6E6E6;
+	font-family:helvetica;
+}
+#delete_message
+{
+	display:none;
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:150px;
+	background-color:#5882FA;
+	text-align:center;
+}
+#delete_message h2
+{
+	color:#0431B4;
+}
+#delete,#cancel
+{
+	border:none;
+	background:none;
+	width:100px;
+	height:40px;
+	font-size:18px;
+	border-radius:5px;
+	border:2px solid white;
+	margin:10px;
+	color:#CED8F6;
+}
+h1
+{
+	text-align:center;
+	margin-top:200px;
+	color:#819FF7;
+	width:600px;
+	margin-left:200px;
+}
+#test_delete
+{
+	border:none;
+	background:none;
+	width:400px;
+	height:50px;
+	font-size:18px;
+	border-radius:5px;
+	border:2px solid #819FF7;
+	margin:10px;
+	color:#045FB4;
+}
+</style>
+</head>
+
+<body>
+
+  <div id="delete_message">
+    <h2>Are You Sure You Want To Delete This</h2>
+    <input type="button" value="Delete" id="delete">
+    <input type="button" value="Cancel" id="cancel">
+  </div>
+  
+  <h1>Simple And Best Delete Confirmation Message Using jQuery,HTML And CSS</h1>
+  <center>
+    <input type="button" id="test_delete" value="Click To Test Delete Confirmation Message">
+  </center>
+  
+</body>
+</html>

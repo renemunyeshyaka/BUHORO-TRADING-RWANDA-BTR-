@@ -1,0 +1,20 @@
+/* I always reset all the html elements */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.error{
+	/* margin-top: 10px; */
+	color: #af0c0c;
+	background-color: #ffe0e0;
+	padding: 8px;
+	display: none;
+}
+
+.success{
+	margin-top: 30px;
+	color: green;
+}

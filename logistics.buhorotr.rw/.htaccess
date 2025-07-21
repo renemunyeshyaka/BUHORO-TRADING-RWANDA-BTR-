@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^logistics\.buhorotr\.rw$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.logistics\.buhorotr\.rw$
+RewriteRule ^/?$ "https\:\/\/logistics\.buhorotr\.rw\/" [R=301,L]
